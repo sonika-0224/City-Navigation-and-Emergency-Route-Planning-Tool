@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { GeoSearchBarComponent } from '../components/geo-search-bar/geo-search-bar.component';
+import { GeoNavComponent } from '../components/geo-nav/geo-nav.component';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    GeoSearchBarComponent,
+    GeoNavComponent,
   ],
   declarations: [HomePage]
 })

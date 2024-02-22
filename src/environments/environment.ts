@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false
+  //baseUrl needs to be added
+  //images url needs to be added
 };
 
 /*
