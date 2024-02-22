@@ -1,0 +1,7 @@
+{
+  "name": "advAlgoProj2-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
