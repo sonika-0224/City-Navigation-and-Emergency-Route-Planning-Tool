@@ -1,43 +1,35 @@
 <ion-content [fullscreen]="true">
   <div id="map"></div>
 
+
   <ion-fab slot="fixed" vertical="top" horizontal="start">
     <ion-row>
+      <!--start button-->
       <ion-col>
-        <ion-button id="find-button" fill="outline" shape="round" class="ion-margin">
-          <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+        <ion-button id="start-button" shape="circle" class="ion-no-padding ion-no-margin" (click)="setStartPoint()">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
         </ion-button>
       </ion-col>
+
       <ion-col>
-        <ion-button id="route-button" fill="outline" shape="round" class="ion-margin" (click)="displayShortestPaths()">
-          <ion-icon slot="icon-only" name="navigate-outline"></ion-icon>
+        <ion-button id="search-button" expand="block" shape="circle" class="ion-no-padding ion-no-margin custom-size" color="primary">
+          <ion-icon slot="icon-only" name="search"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <!--distance button-->
+      <ion-col>
+        <ion-button id="Distance-button" shape="circle" class="ion-no-padding ion-no-margin" (click)="setStartPoint()">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
+        </ion-button>
+      </ion-col>
+      
+      <!-- Destination Button -->
+      <ion-col>
+        <ion-button id="destination-button" shape="circle" class="ion-no-padding ion-no-margin" (click)="setDestination()">
+          <ion-icon slot="icon-only" name="flag"></ion-icon>
         </ion-button>
       </ion-col>
     </ion-row>
   </ion-fab>
   
-  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-row>
-      <ion-col>
-        <ion-button id="location-button" fill="outline" shape="round" class="ion-margin" (click)="viewCurrentLocation()">
-          <ion-icon slot="icon-only" name="locate-outline"></ion-icon>
-        </ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-fab-button>
-      <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button (click)="runSimulation()">
-        <ion-icon name="settings-outline"></ion-icon>
-      </ion-fab-button>      
-      <ion-fab-button id="report-modal-trigger" (click)="focusLocationExists = hasFocusLocation()">
-        <ion-icon name="create-outline"></ion-icon>
-      </ion-fab-button>    
-      <ion-fab-button (click)="viewBlockages()">
-        <ion-icon name="eye-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
-
-</ion-content>

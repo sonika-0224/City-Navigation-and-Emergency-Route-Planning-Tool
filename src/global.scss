@@ -32,6 +32,12 @@ ion-button[shape=circle] {
     height: 56px;
 }
 
+.custom-size {
+    --button-min-height: 50px; /* Example size, adjust as needed */
+    --button-min-width: 50px; /* Adjust width as needed */
+    font-size: 1.2rem; /* Adjust icon size within button as needed */
+  }
+  
 .location-marker ion-icon {
     font-size: 40px;
     color: var(--ion-color-secondary);
